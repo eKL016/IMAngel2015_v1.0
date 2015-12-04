@@ -1,0 +1,88 @@
+<div class="jumbotron" style="background-image:url(//i.imgur.com/Z6shi1j.jpg); height:800px ;margin-top:0px; ">
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.5&appId=665036283638581";
+  fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7">
+      </div>
+      <div class="col-md-4 ">
+        <div class="jumbotron well"  style="opacity:0.85;margin-top:10%">
+          <h1>IM Your Angel</h1>
+          <p style="font-size:20px">據說，在茫茫天使海中</p>
+          <p style="font-size:20px">只會誕生出一位最強天使，他是小天使們仰望的目標</p>
+          <p style="font-size:20px">為了得到此稱號 許多天使毅然決然地展開了一段偉大的旅程
+          <p style="font-size:20px">我們將獲得這稱號的天使稱之為 </p>
+          <p style="font-size:22px;font-weight:700">"守護神"</p><br>
+          <p style="font-size:20px">來吧，就決定是你了！</p>
+          <p style="font-size:20px">朝著成為守護神的目標邁進</p>
+          <p style="font-size:20px">與你的主人攜手奔跑吧！！！</p>
+           <% if !current_user %> <p><a class="btn btn-primary btn-lg" href="/users/sign_up" role="button" style="opacity:1" >活動報名</a></p>
+          <% else %> <p><a class="btn btn-success btn-lg" href="/master" role="button" style="opacity:1" >檢視小主人</a></p><%end%>
+        </div>
+      </div>
+      <div class="col-md-1 "></div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="row"><div class="col-md-12"><br><br></div></div>
+  <div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-4" >
+      <div style="border-radius: 20px;" class="fb-page" data-href="https://www.facebook.com/IMYourAngel/" data-width="500" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/IMYourAngel/"><a href="https://www.facebook.com/IMYourAngel/">IM Your Angel</a></blockquote></div></div>
+      <br><br><br><br>
+    </div>
+    <div class="col-md-6">
+      <div class="well well-lg">
+      <div><h1>本日任務</h1></div>
+      <% if !@pages.empty? %>
+        <table class="table table-hover table-bordered">
+          <thead>
+            <tr>
+              <td>發送時間</td>
+              <td>對象</td>
+              <td>任務內容</td>
+            </tr>
+          </thead>
+          <tbody>
+            <% @pages.each do |page| %>
+              <tr class="warning">
+                <%if page.finish == false%>
+                  <td><%= page.created_at.localtime.strftime("%b %d %p %I:%M") %></td>
+                  <td><%= page.title %></td>
+                  <td><%= simple_format(page.description) %></td>
+                  <% if !current_user %>
+                  <%elsif current_user.id ==1 %>
+                  <td><%= link_to("完成", edit_page_path(page),    class: "btn btn-sm btn-default")%></td>
+                  <%else%>
+                  <%end%>
+                <%else%><%end%>
+              </tr>
+            <% end %>
+            <% @pages.each do |page| %>
+              <tr class="success">
+                <%if page.finish == true%>
+                  <td><%= page.created_at.localtime.strftime("%b %d %p %I:%M") %></td>
+                  <td><%= page.title %></td>
+                <td><%= simple_format('<s>' + page.description + '</s>'+ '(已完成，增加 ' + page.score.to_s + ' 好感度)' ) %></td>
+                <%else%><%end%>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+      <%else%>
+        <div class="alert alert-success" role="alert">已經都沒有任務囉！</div>
+      <%end%>
+        <%if current_user.id== 1%> <%= link_to("任務重置", remove_all_pages_path,  class: "btn btn-warning", method: :get, data: { confirm: "確定重置？" } )%>
+        <%else%><%end%>
+      </div>
+    </div>
+    <div class="col-md-1"></div>
+  </div>
+</div>

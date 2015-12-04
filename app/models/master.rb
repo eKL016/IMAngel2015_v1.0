@@ -1,0 +1,3 @@
+class Master < ActiveRecord::Base
+    belongs_to :user
+end

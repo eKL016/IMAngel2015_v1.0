@@ -1,0 +1,59 @@
+<div class="container-fluid" >
+<div style="margin-top:5%"><%= notice_message %></div>
+  <div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-4 well">
+      <h1>指派任務</h1>
+      <%= simple_form_for @page do |f| %>
+        <div class="form-group">
+          <%= f.input :description, label:'透過與小主人的互動可以獲取數量不一的好感度喔！', input_html: { class: "form-control"} %>
+        </div>
+        <%= f.submit "送出", class: "btn btn-primary", data: { disable_with: "送出中..." } %>
+      <% end %>
+      <h1>你和小主人的好感度：<%=current_user.score%></h1>
+    </div>
+    <div class="col-md-2"></div>
+    <div class="col-md-4">
+      <div class="panel panel-info">
+        <div class="panel-heading">你的小主人</div>
+        <div class="panel-body">
+          <%= image_tag(current_user.master.photo, class: "img-thumbnail", style: "max-width:70%;max-height:70%;margin-left:15%")  %>
+        </div>
+        <table class="table table-striped" style="font-size:16px">
+            <tbody>
+                <tr>
+                    <td>姓名</td>
+                    <td><%= current_user.master.name %></td>
+                </tr>
+                <tr>
+                    <td>性別</td>
+                    <td>
+                        <% if current_user.master.gender %>
+                            男
+                        <%else%>
+                            女
+                        <%end%>
+                    </td>
+                </tr>
+                <tr>
+                    <td>系級</td>
+                    <td><%= current_user.master.grade %></td>
+                </tr>
+                <tr>
+                    <td>屬性</td>
+                    <td>
+                        <%case current_user.master.genre %>
+                        <% when 1 %>
+                            大叔系
+                        <%end%>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+      </div>
+    </div>
+    <div class="col-md-1"></div>
+
+  </div>
+</div>

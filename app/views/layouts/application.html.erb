@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>IM Your Angel</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <script type="text/javascript" src="http://use.typekit.com/jzw8npg.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+
+  <style type="text/css">
+    body {font-family:"source-han-sans-traditional"}
+  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body data-no-turbolink="true">
+  <%= render "common/navbar" %>
+
+  <%= yield %>
+
+  <%= render "common/footer" %>
+  
+</body>
+
+</html>
