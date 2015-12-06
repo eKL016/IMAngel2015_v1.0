@@ -6692,3 +6692,424 @@ Processing by PagesController#index as HTML
   Rendered common/_navbar.html.erb (0.2ms)
   Rendered common/_footer.html.erb (0.0ms)
 Completed 200 OK in 59ms (Views: 58.1ms | ActiveRecord: 0.2ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+
+
+Started GET "/" for 219.70.220.236 at 2015-12-05 00:18:13 +0800
+Cannot render console from 219.70.220.236! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#index as HTML
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "pages"
+  Rendered pages/index.html.erb within layouts/application (7.3ms)
+Completed 500 Internal Server Error in 38ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    79:       <%else%>
+    80:         <div class="alert alert-success" role="alert">已經都沒有任務囉！</div>
+    81:       <%end%>
+    82:         <%if current_user.id== 1%> <%= link_to("任務重置", remove_all_pages_path,  class: "btn btn-warning", method: :get, data: { confirm: "確定重置？" } )%>
+    83:         <%else%><%end%>
+    84:       </div>
+    85:     </div>
+  app/views/pages/index.html.erb:82:in `_app_views_pages_index_html_erb___1109099031491779662_49853520'
+
+
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (17.5ms)
+
+
+Started GET "/" for 140.112.245.234 at 2015-12-05 00:19:57 +0800
+Cannot render console from 140.112.245.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#index as HTML
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "pages"[0m
+  Rendered pages/index.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    79:       <%else%>
+    80:         <div class="alert alert-success" role="alert">已經都沒有任務囉！</div>
+    81:       <%end%>
+    82:         <%if current_user.id== 1%> <%= link_to("任務重置", remove_all_pages_path,  class: "btn btn-warning", method: :get, data: { confirm: "確定重置？" } )%>
+    83:         <%else%><%end%>
+    84:       </div>
+    85:     </div>
+  app/views/pages/index.html.erb:82:in `_app_views_pages_index_html_erb___1109099031491779662_49853520'
+
+
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (16.9ms)
+
+
+Started GET "/" for 219.70.220.236 at 2015-12-05 00:23:20 +0800
+Cannot render console from 219.70.220.236! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#index as HTML
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "pages"
+  Rendered pages/index.html.erb within layouts/application (5.6ms)
+  Rendered common/_navbar.html.erb (0.7ms)
+  Rendered common/_footer.html.erb (0.2ms)
+Completed 200 OK in 2577ms (Views: 2567.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-0bee8c8d9e84b5bfbe23eb7a745a3e6aa40b09cfc49c0aa7d380c23fd5ec322d.css?body=1" for 219.70.220.236 at 2015-12-05 00:23:22 +0800
+Cannot render console from 219.70.220.236! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 219.70.220.236 at 2015-12-05 00:23:22 +0800
+Cannot render console from 219.70.220.236! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 219.70.220.236 at 2015-12-05 00:23:22 +0800
+Cannot render console from 219.70.220.236! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 219.70.220.236 at 2015-12-05 00:23:22 +0800
+Cannot render console from 219.70.220.236! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/typekit.self-0de72f4321a10312baa96a4f19c32b67c764b2726c69a2f9a0a4815d94d61eb4.js?body=1" for 219.70.220.236 at 2015-12-05 00:23:22 +0800
+Cannot render console from 219.70.220.236! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 219.70.220.236 at 2015-12-05 00:23:22 +0800
+Cannot render console from 219.70.220.236! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 219.70.220.236 at 2015-12-05 00:23:22 +0800
+Cannot render console from 219.70.220.236! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for 219.70.220.236 at 2015-12-05 00:23:22 +0800
+Cannot render console from 219.70.220.236! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 219.70.220.236 at 2015-12-05 00:23:22 +0800
+Cannot render console from 219.70.220.236! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/users/sign_in" for 219.70.220.236 at 2015-12-05 00:23:53 +0800
+Cannot render console from 219.70.220.236! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (52.4ms)
+  Rendered common/_navbar.html.erb (0.3ms)
+  Rendered common/_footer.html.erb (0.0ms)
+Completed 200 OK in 122ms (Views: 107.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 219.70.220.236 at 2015-12-05 00:24:05 +0800
+Cannot render console from 219.70.220.236! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#index as HTML
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "pages"[0m
+  Rendered pages/index.html.erb within layouts/application (0.7ms)
+  Rendered common/_navbar.html.erb (0.2ms)
+  Rendered common/_footer.html.erb (0.0ms)
+Completed 200 OK in 51ms (Views: 50.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/sign_in" for 219.70.220.236 at 2015-12-05 00:24:25 +0800
+Cannot render console from 219.70.220.236! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.6ms)
+  Rendered common/_navbar.html.erb (0.3ms)
+  Rendered common/_footer.html.erb (0.0ms)
+Completed 200 OK in 67ms (Views: 65.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 219.70.220.236 at 2015-12-05 00:24:32 +0800
+Cannot render console from 219.70.220.236! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GBb0IGCLUlbyQs0JpdB5oZkaI1i08am901u2fCBn+UTeKeM9MN91wtCtCH+qshJYojXZK8bv3jkvZ205zqMaaw==", "user"=>{"email"=>"ethan86116@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"登入"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "ethan86116@gmail.com"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["last_sign_in_at", "2015-12-02 13:26:44.257677"], ["current_sign_in_at", "2015-12-04 16:24:32.192081"], ["sign_in_count", 4], ["updated_at", "2015-12-04 16:24:32.193075"], ["id", 1]]
+  [1m[36m (78.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://140.112.106.45:8000/
+Completed 302 Found in 160ms (ActiveRecord: 78.9ms)
+
+
+Started GET "/" for 219.70.220.236 at 2015-12-05 00:24:32 +0800
+Cannot render console from 219.70.220.236! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "pages"[0m
+  Rendered pages/index.html.erb within layouts/application (1.4ms)
+  Rendered common/_navbar.html.erb (0.2ms)
+  Rendered common/_footer.html.erb (0.0ms)
+Completed 200 OK in 49ms (Views: 48.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 140.112.245.234 at 2015-12-05 00:29:12 +0800
+Cannot render console from 140.112.245.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#index as HTML
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "pages"
+  Rendered pages/index.html.erb within layouts/application (5.6ms)
+  Rendered common/_navbar.html.erb (0.7ms)
+  Rendered common/_footer.html.erb (0.2ms)
+Completed 200 OK in 184ms (Views: 174.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 140.112.245.234 at 2015-12-05 00:29:12 +0800
+Cannot render console from 140.112.245.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#index as HTML
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "pages"[0m
+  Rendered pages/index.html.erb within layouts/application (0.7ms)
+  Rendered common/_navbar.html.erb (0.7ms)
+  Rendered common/_footer.html.erb (0.0ms)
+Completed 200 OK in 84ms (Views: 83.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 140.112.245.234 at 2015-12-05 00:29:12 +0800
+Cannot render console from 140.112.245.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 140.112.245.234 at 2015-12-05 00:29:12 +0800
+Cannot render console from 140.112.245.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-0bee8c8d9e84b5bfbe23eb7a745a3e6aa40b09cfc49c0aa7d380c23fd5ec322d.css?body=1" for 140.112.245.234 at 2015-12-05 00:29:12 +0800
+Cannot render console from 140.112.245.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 140.112.245.234 at 2015-12-05 00:29:12 +0800
+Cannot render console from 140.112.245.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 140.112.245.234 at 2015-12-05 00:29:12 +0800
+Cannot render console from 140.112.245.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/typekit.self-0de72f4321a10312baa96a4f19c32b67c764b2726c69a2f9a0a4815d94d61eb4.js?body=1" for 140.112.245.234 at 2015-12-05 00:29:12 +0800
+Cannot render console from 140.112.245.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 140.112.245.234 at 2015-12-05 00:29:12 +0800
+Cannot render console from 140.112.245.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 140.112.245.234 at 2015-12-05 00:29:12 +0800
+Cannot render console from 140.112.245.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for 140.112.245.234 at 2015-12-05 00:29:12 +0800
+Cannot render console from 140.112.245.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/imyourangel/2015/" for 140.112.245.234 at 2015-12-05 00:39:08 +0800
+Cannot render console from 140.112.245.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActionController::RoutingError (No route matches [GET] "/imyourangel/2015"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:31:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.5ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (7.0ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (32.4ms)
+
+
+Started GET "/" for 140.112.245.234 at 2015-12-05 00:39:35 +0800
+Cannot render console from 140.112.245.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#index as HTML
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "pages"
+  Rendered pages/index.html.erb within layouts/application (5.1ms)
+  Rendered common/_navbar.html.erb (0.8ms)
+  Rendered common/_footer.html.erb (0.2ms)
+Completed 200 OK in 170ms (Views: 166.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/imyourangel/2015/" for 140.112.245.234 at 2015-12-05 00:43:55 +0800
+Cannot render console from 140.112.245.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActionController::RoutingError (No route matches [GET] "/imyourangel/2015"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:31:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.5ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (7.0ms)
+  Rendered /var/lib/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (32.0ms)
+
+
+Started GET "/" for 140.112.245.234 at 2015-12-05 00:44:01 +0800
+Cannot render console from 140.112.245.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#index as HTML
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "pages"
+  Rendered pages/index.html.erb within layouts/application (5.1ms)
+  Rendered common/_navbar.html.erb (0.8ms)
+  Rendered common/_footer.html.erb (0.2ms)
+Completed 200 OK in 171ms (Views: 168.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 140.112.245.234 at 2015-12-05 00:44:02 +0800
+Cannot render console from 140.112.245.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#index as HTML
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "pages"[0m
+  Rendered pages/index.html.erb within layouts/application (0.7ms)
+  Rendered common/_navbar.html.erb (0.8ms)
+  Rendered common/_footer.html.erb (0.0ms)
+Completed 200 OK in 80ms (Views: 79.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 219.70.220.236 at 2015-12-06 18:18:39 +0800
+Cannot render console from 219.70.220.236! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#index as HTML
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "pages"
+  Rendered pages/index.html.erb within layouts/application (5.5ms)
+  Rendered common/_navbar.html.erb (0.7ms)
+  Rendered common/_footer.html.erb (0.2ms)
+Completed 200 OK in 182ms (Views: 173.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 219.70.220.236 at 2015-12-06 18:18:40 +0800
+Cannot render console from 219.70.220.236! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-0bee8c8d9e84b5bfbe23eb7a745a3e6aa40b09cfc49c0aa7d380c23fd5ec322d.css?body=1" for 219.70.220.236 at 2015-12-06 18:18:40 +0800
+Cannot render console from 219.70.220.236! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 219.70.220.236 at 2015-12-06 18:18:40 +0800
+Cannot render console from 219.70.220.236! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 219.70.220.236 at 2015-12-06 18:18:40 +0800
+Cannot render console from 219.70.220.236! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/typekit.self-0de72f4321a10312baa96a4f19c32b67c764b2726c69a2f9a0a4815d94d61eb4.js?body=1" for 219.70.220.236 at 2015-12-06 18:18:40 +0800
+Cannot render console from 219.70.220.236! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 219.70.220.236 at 2015-12-06 18:18:40 +0800
+Cannot render console from 219.70.220.236! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 219.70.220.236 at 2015-12-06 18:18:40 +0800
+Cannot render console from 219.70.220.236! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap.self-6c92f650931beefe48977f272b7015d6b9b45da8b09831ebf88e05193c12d355.js?body=1" for 219.70.220.236 at 2015-12-06 18:18:40 +0800
+Cannot render console from 219.70.220.236! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for 219.70.220.236 at 2015-12-06 18:18:40 +0800
+Cannot render console from 219.70.220.236! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/users/sign_in" for 219.70.220.236 at 2015-12-06 18:18:59 +0800
+Cannot render console from 219.70.220.236! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (46.9ms)
+  Rendered common/_navbar.html.erb (0.3ms)
+  Rendered common/_footer.html.erb (0.0ms)
+Completed 200 OK in 118ms (Views: 97.5ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/users/sign_in" for 219.70.220.236 at 2015-12-06 18:19:01 +0800
+Cannot render console from 219.70.220.236! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"W8VsTGzj7z5rk3l35yBKElAozpftE+CuZfx94gl4zsyuWl5e+w4NwmbodriML07bJthppuBbK8/JfoTqQxj+sg==", "user"=>{"email"=>"ethan86116@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"登入"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "ethan86116@gmail.com"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["last_sign_in_at", "2015-12-04 16:24:32.192081"], ["current_sign_in_at", "2015-12-06 10:19:01.313411"], ["sign_in_count", 5], ["updated_at", "2015-12-06 10:19:01.314359"], ["id", 1]]
+  [1m[35m (136.8ms)[0m  commit transaction
+Redirected to http://140.112.106.45:8000/
+Completed 302 Found in 218ms (ActiveRecord: 137.3ms)
+
+
+Started GET "/" for 219.70.220.236 at 2015-12-06 18:19:01 +0800
+Cannot render console from 219.70.220.236! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "pages"
+  Rendered pages/index.html.erb within layouts/application (1.3ms)
+  Rendered common/_navbar.html.erb (0.2ms)
+  Rendered common/_footer.html.erb (0.0ms)
+Completed 200 OK in 46ms (Views: 45.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/master" for 219.70.220.236 at 2015-12-06 18:19:05 +0800
+Cannot render console from 219.70.220.236! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#master as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mMaster Load (0.1ms)[0m  SELECT  "masters".* FROM "masters" WHERE "masters"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered pages/master.html.erb within layouts/application (15.3ms)
+  Rendered common/_navbar.html.erb (0.2ms)
+  Rendered common/_footer.html.erb (0.0ms)
+Completed 200 OK in 74ms (Views: 69.1ms | ActiveRecord: 0.5ms)

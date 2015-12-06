@@ -79,8 +79,8 @@
       <%else%>
         <div class="alert alert-success" role="alert">已經都沒有任務囉！</div>
       <%end%>
-        <%if current_user.id== 1%> <%= link_to("任務重置", remove_all_pages_path,  class: "btn btn-warning", method: :get, data: { confirm: "確定重置？" } )%>
-        <%else%><%end%>
+        <%if current_user%><%if current_user.id==1%> <%= link_to("任務重置", remove_all_pages_path,  class: "btn btn-warning", method: :get, data: { confirm: "確定重置？" } )%>
+        <%else%><%end%><%else%><%end%>
       </div>
     </div>
     <div class="col-md-1"></div>
